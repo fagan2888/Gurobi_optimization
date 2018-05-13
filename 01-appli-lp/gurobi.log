@@ -214,3 +214,79 @@ Iteration    Objective       Primal Inf.    Dual Inf.      Time
 
 Solved in 5 iterations and 0.00 seconds
 Optimal objective  1.086622782e-01
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 14:43:14 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 9 rows, 77 columns and 570 nonzeros
+Coefficient statistics:
+  Matrix range     [1e-01, 5e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [8e-01, 8e+01]
+Presolve removed 0 rows and 47 columns
+Presolve time: 0.01s
+Presolved: 9 rows, 30 columns, 240 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.384688e+01   0.000000e+00      0s
+       5    1.0866228e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 5 iterations and 0.01 seconds
+Optimal objective  1.086622782e-01
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:05:12 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 9 rows, 77 columns and 570 nonzeros
+Coefficient statistics:
+  Matrix range     [1e-01, 5e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [8e-01, 8e+01]
+Presolve removed 0 rows and 47 columns
+Presolve time: 0.00s
+Presolved: 9 rows, 30 columns, 240 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.384688e+01   0.000000e+00      0s
+       5    1.0866228e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 5 iterations and 0.00 seconds
+Optimal objective  1.086622782e-01
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:14:27 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 9 rows, 77 columns and 570 nonzeros
+Coefficient statistics:
+  Matrix range     [1e-01, 5e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [8e-01, 8e+01]
+Presolve removed 0 rows and 47 columns
+Presolve time: 0.00s
+Presolved: 9 rows, 30 columns, 240 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.384688e+01   0.000000e+00      0s
+       5    1.0866228e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 5 iterations and 0.00 seconds
+Optimal objective  1.086622782e-01

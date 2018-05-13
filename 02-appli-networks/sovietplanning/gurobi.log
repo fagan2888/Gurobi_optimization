@@ -1,0 +1,529 @@
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 14:36:50 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 14:37:50 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 14:38:10 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 14:38:17 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 14:41:31 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 14:41:49 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 14:43:21 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 15:07:34 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 15:11:34 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 15:11:36 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 15:15:35 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 15:15:37 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 17:37:30 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 17:37:44 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 17:46:38 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 17:47:00 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 17:49:57 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve removed 5 rows and 5 columns
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 17:50:56 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve removed 78 rows and 154 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 17:51:11 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sat May 12 18:06:09 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 10:12:05 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 10:17:26 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 10:17:28 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 10:19:06 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 10:19:20 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 10:19:43 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 10:19:56 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 10:20:06 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 10:20:12 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+Error: it isn't a multi-objective model
+No solution available
+Error: it isn't a multi-objective model
+No solution available
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:14:35 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:15:22 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 154 columns and 308 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:18:49 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 155 columns and 310 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve removed 51 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 27 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.6891034e+05   7.899050e+01   0.000000e+00      0s
+      22    3.9505200e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.00 seconds
+Optimal objective  3.950520000e+05
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:19:05 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 155 columns and 310 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve removed 51 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 27 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.6891034e+05   7.899050e+01   0.000000e+00      0s
+      22    3.9505200e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.00 seconds
+Optimal objective  3.950520000e+05
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:22:47 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 155 columns and 310 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve removed 51 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 27 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.6891034e+05   7.899050e+01   0.000000e+00      0s
+      22    3.9505200e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.00 seconds
+Optimal objective  3.950520000e+05
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:24:36 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 155 columns and 310 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve removed 51 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 27 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.6891034e+05   7.899050e+01   0.000000e+00      0s
+      22    3.9505200e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.00 seconds
+Optimal objective  3.950520000e+05
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:25:53 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 155 columns and 310 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve removed 51 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 27 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.6891034e+05   7.899050e+01   0.000000e+00      0s
+      22    3.9505200e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.00 seconds
+Optimal objective  3.950520000e+05
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:27:33 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 155 columns and 310 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve removed 51 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 27 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.6891034e+05   7.899050e+01   0.000000e+00      0s
+      22    3.9505200e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.00 seconds
+Optimal objective  3.950520000e+05
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun May 13 11:27:59 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 78 rows, 155 columns and 310 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 3e+02]
+Presolve removed 51 rows and 75 columns
+Presolve time: 0.00s
+Presolved: 27 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.6891034e+05   7.899050e+01   0.000000e+00      0s
+      22    3.9505200e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.00 seconds
+Optimal objective  3.950520000e+05
