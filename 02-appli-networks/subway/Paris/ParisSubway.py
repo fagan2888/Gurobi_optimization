@@ -14,7 +14,8 @@ namesNodes = pd.read_csv(thepath + "/nodes.csv", sep=',', header=None)
 # Preparing the data: setting up the graph and weight matrices
 nbNodes = arcsData.iloc[:, 0].max()
 arcsList = [(i, j) for i, j in zip(arcsData.iloc[:, 0], arcsData.iloc[:, 1])]
-coordinates = [(i, j) for i, j in zip(namesNodes.iloc[:, 1], namesNodes.iloc[:, 2])]
+edges = [(i, j) for i, j in zip(arcsData.iloc[:, 0], arcsData.iloc[:, 1]) if i <= j]
+coordinates = [(i, -j) for i, j in zip(namesNodes.iloc[:, 2], namesNodes.iloc[:, 3])]
 weights = arcsData.iloc[:, 2]
 originNode = 84
 destinationNode = 116
@@ -28,6 +29,7 @@ m.addConstr(arcs.sum('*', destinationNode) - arcs.sum(destinationNode, '*') == -
 m.optimize()
 
 path = originNode
+pathList = []
 if m.status == grb.GRB.Status.OPTIMAL:
     print('***Optimal solution***')
     print('Minimum distance from', namesNodes.iloc[originNode - 1, 0], 'to',
@@ -39,13 +41,34 @@ if m.status == grb.GRB.Status.OPTIMAL:
             if arc[1] == path and solution[arc] == 1:
                 print(namesNodes.iloc[arc[0] - 1, 0], '(#%d)' % (arc[0]))
                 path = arc[0]
+                pathList.append(path)
 
 g = Graph()
 g.add_vertices(nbNodes + 1)
-g.add_edges(arcsList)
+g.add_edges(edges)
 g.delete_vertices(0)
 layout = Layout(coordinates)
-g.vs[originNode]["label"] = namesNodes.iloc[originNode - 1, 0]
-g.vs[destinationNode]["label"] = namesNodes.iloc[destinationNode - 1, 0]
-plot(g, layout=layout)
+visual_style = {}
+visual_style["layout"] = layout
+visual_style["vertex_color"] = ["SkyBlue2" for i in range(nbNodes) if i not in [originNode, destinationNode]]
+visual_style["vertex_color"][originNode] = "firebrick2"
+visual_style["vertex_color"][destinationNode] = "forestgreen"
+visual_style["vertex_size"] = [10 for i in range(nbNodes) if i not in [originNode, destinationNode]]
+visual_style["vertex_size"][originNode] = 40
+visual_style["vertex_size"][destinationNode] = 40
+visual_style["edge_arrow_size"] = 0
+visual_style["margin"] = (-200, -300, -700, -1000)
+visual_style["bbox"] = (1100, 700)
+visual_style["vertex_label"] = [None for i in range(nbNodes) if i not in [originNode, destinationNode]]
+visual_style["vertex_label"][originNode] = namesNodes.iloc[originNode - 1, 0]
+visual_style["vertex_label"][destinationNode] = namesNodes.iloc[destinationNode - 1, 0]
+plot(g, **visual_style)
+path = originNode
+while path != destinationNode:
+    path = pathList.pop(0)
+    visual_style["vertex_size"][path] = 40
+    visual_style["vertex_label"][path] = namesNodes.iloc[path - 1, 0]
+    plot(g, **visual_style)
+    visual_style["vertex_size"][path] = 10
+    visual_style["vertex_label"][path] = None
 
