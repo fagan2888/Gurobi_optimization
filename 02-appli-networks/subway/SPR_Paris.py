@@ -25,14 +25,14 @@ for idx, i, j in zip(range(len(arcs)), arcs[:, 0], arcs[:, 1]):
 
 # Call the algorithm
 originMode = 84 - 1
-destionationNode = 116 - 1
-dist, prec = dijkstra(graph, w_matrix, originMode, destionationNode)
+destinationNode = 116 - 1
+dist, prec = dijkstra(graph, w_matrix, originMode, destinationNode)
 
 
 # Display the solution
 print('Minimum distance from', namesNodes.iloc[originMode, 0], 'to',
-      namesNodes.iloc[destionationNode, 0], '\n', dist[destionationNode])
-path = destionationNode
+      namesNodes.iloc[destinationNode, 0], '\n', dist[destinationNode])
+path = destinationNode
 step = 0
 print('\n\nPath:')
 while path != originMode:
