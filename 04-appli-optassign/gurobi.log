@@ -855,3 +855,11 @@ Barrier solve interrupted - model solved by another algorithm
 Solved with dual simplex
 Solved in 61286 iterations and 34.22 seconds
 Optimal objective  1.973096540e+03
+
+Gurobi 8.0.0 (linux64, Python) logging started Thu Jun 14 15:38:16 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.0 (linux64, Python) logging started Thu Jun 14 15:38:43 2018
+
+Academic license - for non-commercial use only
