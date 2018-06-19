@@ -5,13 +5,13 @@ import pandas as pd
 import time
 
 syntheticData = False
-doGurobi = False
-doIPFP1 = False
-doIPFP1bis = False
+doGurobi = True
+doIPFP1 = True
+doIPFP1bis = True
 doIPFP2 = True
 
 tol = 1E-9
-maxiter = 1000000
+maxite = 1000000
 sigma = 0.1
 
 if syntheticData:
@@ -37,9 +37,9 @@ else:
     nbcar = 10
     A = data.iloc[:nbcar, 1:nbcar + 1].values
     data = pd.read_csv(thePath + '/Xvals.csv', sep=',')
-    Xvals = data.iloc[:,:nbcar].values
+    Xvals = data.iloc[:, :nbcar].values
     data = pd.read_csv(thePath + '/Yvals.csv', sep=',')
-    Yvals = data.iloc[:,:nbcar].values
+    Yvals = data.iloc[:, :nbcar].values
     Xvals = (Xvals - np.mean(Xvals, axis=0)) / np.std(Xvals, axis=0, ddof=1)
     Yvals = (Yvals - np.mean(Yvals, axis=0)) / np.std(Yvals, axis=0, ddof=1)
     nobs = Xvals.shape[0]
@@ -75,26 +75,26 @@ if doGurobi:
 
 if doIPFP1:
    ptm = time.time()
-   iter = 0
+   ite = 0
 
    K = np.exp(Phi/sigma)
    B = np.repeat(1, nbY)
    error = tol + 1
-   while error > tol and iter < maxiter:
+   while error > tol and ite < maxite:
        A = p / K.dot(B)
        KA = A.dot(K)
        error = np.max(KA * B / q - 1)
        B = q / KA
-       iter = iter + 1
+       ite = ite + 1
    u = - sigma * np.log(A)
    v = - sigma * np.log(B)
    pi = (K.T * A).T * np.tile(B, nbX).reshape(nbX, nbY)
    val = np.sum(pi * Phi) - sigma * np.sum(pi * np.log(pi))
    end = time.time() - ptm
-   if iter >= maxiter:
-       print('Maximum number of iterations reached in IPFP1.')
+   if ite >= maxite:
+       print('Maximum number of iteations reached in IPFP1.')
    else:
-       print('IPFP1 converged in ', iter, ' steps and ', end, 's.')
+       print('IPFP1 converged in ', ite, ' steps and ', end, 's.')
        print('Value of the problem (IPFP1) = ', val)
        print('Sum(pi*Phi) (IPFP1) = ', np.sum(pi*Phi))
        print(np.subtract(u[:nrow], u[nrow - 1]))
@@ -103,25 +103,25 @@ if doIPFP1:
 
 if doIPFP1bis:
     ptm = time.time()
-    iter = 0
+    ite = 0
     v = np.repeat(0, nbY)
     mu = - sigma * np.log(p)
     nu = - sigma * np.log(q)
     error = tol + 1
-    while error > tol and iter < maxiter:
+    while error > tol and ite < maxite:
         u = mu + sigma * np.log(np.sum(np.exp((Phi - np.tile(v, nbX).reshape(nbX, nbY))/sigma), axis=1))
         KA = np.sum(np.exp((Phi.T - u).T / sigma), axis=0)
         error = np.max(np.abs(KA*np.exp(-v / sigma) / q - 1))
         v = nu + sigma * np.log(KA)
-        iter = iter + 1
+        ite = ite + 1
     pi = np.exp(((Phi.T - u).T - np.tile(v, nbX).reshape(nbX, nbY)) / sigma)
     val = np.sum(pi * Phi) - sigma * np.sum((pi * np.log(pi))[pi != 0])
     end = time.time() - ptm
 
-    if iter >= maxiter:
-        print('Maximum number of iterations reached in IPFP1.')
+    if ite >= maxite:
+        print('Maximum number of iteations reached in IPFP1.')
     else:
-        print('IPFP1bis converged in ', iter, ' steps and ', end, 's.')
+        print('IPFP1bis converged in ', ite, ' steps and ', end, 's.')
         print('Value of the problem (IPFP1bis) = ', val)
         print('Sum(pi*Phi) (IPFP1bis) = ', np.sum(pi*Phi))
         print(np.subtract(u[:nrow], u[nrow - 1]))
@@ -130,27 +130,27 @@ if doIPFP1bis:
 
 if (doIPFP2):
     ptm = time.time()
-    iter = 0
+    ite = 0
     v = np.repeat(0, nbY)
     mu = - sigma * np.log(p)
     nu = - sigma * np.log(q)
     error = tol + 1
     uprec = float('-inf')
-    while error > tol and iter < maxiter:
-        vstar = np.max((Phi.T - v).T, axis=1)
+    while error > tol and ite < maxite:
+        vstar = np.max(Phi - v, axis=1)
         u = mu + vstar + sigma * np.log(np.sum(np.exp(((Phi - np.tile(v, nbX).reshape(nbX, nbY)).T - vstar).T/sigma), axis=1))
         error = np.max(np.abs(u - uprec))
         uprec = u
         ustar = np.max((Phi.T - u).T, axis=0)
         v = nu + ustar + sigma * np.log(np.sum(np.exp(((Phi.T - u).T - np.tile(ustar, nbX).reshape(nbX, nbY))/sigma), axis=0))
-        iter = iter + 1
+        ite = ite + 1
     pi = np.exp(((Phi.T - u).T - np.tile(v, nbX).reshape(nbX, nbY)) / sigma)
     val = np.sum(pi * Phi) - sigma * np.sum(pi * np.log(pi))
     end = time.time() - ptm
-    if iter >= maxiter:
-        print('Maximum number of iterations reached in IPFP2.')
+    if ite >= maxite:
+        print('Maximum number of iteations reached in IPFP2.')
     else:
-        print('IPFP2 converged in ', iter, ' steps and ', end, 's.')
+        print('IPFP2 converged in ', ite, ' steps and ', end, 's.')
         print('Value of the problem (IPFP2) = ', val)
         print('Sum(pi*Phi) (IPFP2) = ', np.sum(pi*Phi))
         print(np.subtract(u[:nrow], u[nrow - 1]))

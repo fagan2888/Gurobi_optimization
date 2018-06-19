@@ -266,3 +266,175 @@ Iteration    Objective       Primal Inf.    Dual Inf.      Time
 
 Solved in 22 iterations and 0.01 seconds
 Optimal objective  8.691517343e-01
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun Jun 17 10:59:17 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 18 rows, 80 columns and 160 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [6e-03, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-01, 1e-01]
+Presolve time: 0.02s
+Presolved: 18 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0012483e+31   1.600000e+32   4.001248e+01      0s
+      22    8.6915173e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.04 seconds
+Optimal objective  8.691517343e-01
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun Jun 17 11:06:09 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2316 rows, 1340964 columns and 2681928 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-07, 8e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [9e-04, 9e-04]
+
+Concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Presolve time: 2.44s
+Presolved: 2316 rows, 1340964 columns, 2681928 nonzeros
+
+Ordering time: 0.02s
+
+Barrier statistics:
+ AA' NZ     : 1.341e+06
+ Factor NZ  : 2.683e+06 (roughly 600 MBytes of memory)
+ Factor Ops : 4.144e+09 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0  -1.15256416e-12 -0.00000000e+00  1.16e+02 7.60e+00  1.68e+00     4s
+   1  -1.11574956e+02  1.69369750e+01  7.24e-01 1.19e-14  1.07e-02     4s
+   2  -8.24719807e-02  1.68964256e+01  5.20e-14 1.50e-13  1.27e-05     5s
+   3   7.24096975e-02  6.43502950e+00  7.37e-18 1.05e-13  4.74e-06     5s
+   4   2.77690469e-01  3.27627927e+00  1.56e-17 8.88e-14  2.24e-06     6s
+   5   6.44844430e-01  2.35353425e+00  1.02e-17 9.68e-14  1.27e-06     7s
+   6   1.06049763e+00  1.96513827e+00  3.53e-17 1.03e-13  6.75e-07     7s
+   7   1.31688806e+00  1.82659299e+00  1.06e-16 1.03e-13  3.80e-07     8s
+   8   1.44770608e+00  1.79423054e+00  1.82e-16 1.29e-13  2.58e-07     8s
+   9   1.54539430e+00  1.75666687e+00  7.51e-17 1.21e-13  1.58e-07     8s
+  10   1.63054622e+00  1.74003251e+00  5.02e-16 1.28e-13  8.16e-08     9s
+  11   1.68252204e+00  1.71556451e+00  6.68e-17 8.27e-14  2.46e-08     9s
+  12   1.70025822e+00  1.70548589e+00  9.04e-16 6.29e-14  3.90e-09    10s
+
+Barrier performed 12 iterations in 10.21 seconds
+Barrier solve interrupted - model solved by another algorithm
+
+
+Solved with dual simplex
+Solved in 65672 iterations and 10.23 seconds
+Optimal objective  1.703883022e+00
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun Jun 17 11:32:14 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 18 rows, 80 columns and 160 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [6e-03, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-01, 1e-01]
+Presolve time: 0.00s
+Presolved: 18 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0012483e+31   1.600000e+32   4.001248e+01      0s
+      22    8.6915173e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.00 seconds
+Optimal objective  8.691517343e-01
+
+Gurobi 8.0.0 (linux64, Python) logging started Sun Jun 17 11:51:57 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 18 rows, 80 columns and 160 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [6e-03, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-01, 1e-01]
+Presolve time: 0.00s
+Presolved: 18 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0012483e+31   1.600000e+32   4.001248e+01      0s
+      22    8.6915173e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.00 seconds
+Optimal objective  8.691517343e-01
+
+Gurobi 8.0.0 (linux64, Python) logging started Tue Jun 19 09:16:26 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 18 rows, 80 columns and 160 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [6e-03, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-01, 1e-01]
+Presolve time: 0.02s
+Presolved: 18 rows, 80 columns, 160 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0012483e+31   1.600000e+32   4.001248e+01      0s
+      22    8.6915173e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 22 iterations and 0.04 seconds
+Optimal objective  8.691517343e-01
+
+Gurobi 8.0.0 (linux64, Python) logging started Tue Jun 19 09:16:42 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2316 rows, 1340964 columns and 2681928 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-07, 8e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [9e-04, 9e-04]
+
+Concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Presolve time: 2.72s
+Presolved: 2316 rows, 1340964 columns, 2681928 nonzeros
+
+Ordering time: 0.02s
+
+Barrier statistics:
+ AA' NZ     : 1.341e+06
+ Factor NZ  : 2.683e+06 (roughly 600 MBytes of memory)
+ Factor Ops : 4.144e+09 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0  -1.15256416e-12 -0.00000000e+00  1.16e+02 7.60e+00  1.68e+00     4s
+   1  -1.11574956e+02  1.69369750e+01  7.24e-01 1.19e-14  1.07e-02     5s
+   2  -8.24719807e-02  1.68964256e+01  5.20e-14 1.50e-13  1.27e-05     5s
+   3   7.24096975e-02  6.43502950e+00  7.37e-18 1.05e-13  4.74e-06     6s
+   4   2.77690469e-01  3.27627927e+00  1.56e-17 8.88e-14  2.24e-06     6s
+   5   6.44844430e-01  2.35353425e+00  1.02e-17 9.68e-14  1.27e-06     7s
+   6   1.06049763e+00  1.96513827e+00  3.53e-17 1.03e-13  6.75e-07     8s
+   7   1.31688806e+00  1.82659299e+00  1.06e-16 1.03e-13  3.80e-07     8s
+   8   1.44770608e+00  1.79423054e+00  1.82e-16 1.29e-13  2.58e-07     8s
+   9   1.54539430e+00  1.75666687e+00  7.51e-17 1.21e-13  1.58e-07     9s
+  10   1.63054622e+00  1.74003251e+00  5.02e-16 1.28e-13  8.16e-08     9s
+  11   1.68252204e+00  1.71556451e+00  6.68e-17 8.27e-14  2.46e-08    10s
+  12   1.70025822e+00  1.70548589e+00  9.04e-16 6.29e-14  3.90e-09    11s
+
+Barrier performed 12 iterations in 10.69 seconds
+Barrier solve interrupted - model solved by another algorithm
+
+
+Solved with dual simplex
+Solved in 65672 iterations and 10.71 seconds
+Optimal objective  1.703883022e+00

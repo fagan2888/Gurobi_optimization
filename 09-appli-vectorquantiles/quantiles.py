@@ -16,7 +16,7 @@ ncoldata = engeldataset.shape[1]
 
 X0 = engeldataset.iloc[:, ncoldata - 1]
 
-Y = engeldataset.iloc[:,0]
+Y = engeldataset.iloc[:, 0]
 
 thedata = pd.DataFrame({'X0': X0, 'Y': Y})
 ax = sns.lmplot('X0', 'Y', thedata, size=12)
@@ -33,7 +33,7 @@ obj = np.concatenate([np.repeat(t, n), np.repeat(1 - t, n), np.repeat(0, k)])
 var = [(i, j) for i in range(n) for j in range(2)]
 
 m = grb.Model('quantile')
-quantiles = m.addVars(var, obj=obj, lb=0 ,name='quantile')
+quantiles = m.addVars(var, obj=obj, lb=0, name='quantile')
 intercept = m.addVar(lb=0, name='intercept')
 x0 = m.addVar(lb=0, name='x0')
 m.addConstrs(quantiles[person, 0] - quantiles[person, 1] + intercept + X0[person] * x0 == Y[person] for person in range(n))
