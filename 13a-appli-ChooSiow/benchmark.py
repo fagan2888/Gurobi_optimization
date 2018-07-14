@@ -7,13 +7,6 @@ import pandas as pd
 import rpy2.robjects as robjects
 import gurobipy as grb
 from scipy.optimize import minimize
-from scipy.optimize import fmin_bfgs
-from scipy.optimize import root
-from scipy.optimize import broyden1
-from scipy.optimize import broyden2
-from scipy.optimize import newton
-from scipy.optimize import fmin_ncg
-from scipy.optimize import fsolve
 from scipy.special import digamma
 
 thepath = os.getcwd()
@@ -180,8 +173,8 @@ def printStats(n, m, mu, phi, lambd):
 
 thelambda = 1
 res_edgeGradient = edgeGradient(thelambda * thephi, then, them)
-res_nodalGradient = nodalGradient(thelambda*thephi, n, m)
-res_simulatedLinprogr = simulatedLinprogr(thelambda*thephi, n, m, 3)
+res_nodalGradient = nodalGradient(thelambda*thephi, then, them)
+res_simulatedLinprogr = simulatedLinprogr(thelambda*thephi, then, them, 3)
 res_ipfp = ipfp(thelambda * thephi, then, them)
 
 printStats(then, them, res_ipfp['mu'], thephi, thelambda)

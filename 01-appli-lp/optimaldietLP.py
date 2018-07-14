@@ -22,7 +22,7 @@ m = grb.Model('optimalDiet')
 meal = m.addVars(names, name='meal')
 m.setObjective(meal.sum(), grb.GRB.MINIMIZE)
 m.addConstrs((grb.quicksum(meal[k] * intake[i, j] for j, k in enumerate(names)) >= allowance[i]
-             for i in range(intake.shape[0])), name='c')
+              for i in range(intake.shape[0])), name='c')
 
 # Display optimal solution
 m.optimize()
