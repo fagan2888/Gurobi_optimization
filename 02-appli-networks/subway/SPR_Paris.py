@@ -1,3 +1,6 @@
+## Gregory Dannay
+## https://github.com/gdannay
+
 import pandas as pd
 from dijkstra import *
 import os

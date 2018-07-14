@@ -1,3 +1,6 @@
+## Gregory Dannay
+## https://github.com/gdannay
+
 import pandas as pd
 import os
 import numpy as np
@@ -8,7 +11,7 @@ from igraph import *
 
 # Extracting the data
 thepath = os.getcwd()
-arcsData = pd.read_csv(thepath + "/arcs.csv", sep=',').drop_duplicates(subset=['from_stop_nb','to_stop_nb']).values
+arcsData = pd.read_csv(thepath + "/arcs.csv", sep=',').drop_duplicates(subset=['from_stop_nb', 'to_stop_nb']).values
 namesNodes = pd.read_csv(thepath + "/nodes.csv", sep=',')
 
 
@@ -16,14 +19,15 @@ namesNodes = pd.read_csv(thepath + "/nodes.csv", sep=',')
 nbNodes = int(np.amax(arcsData[:, 0]))
 names = namesNodes.iloc[:, 0] + ' ' + namesNodes.iloc[:, 6]
 arcsList = [(i, j) for i, j in zip(arcsData[:, 0], arcsData[:, 1])]
-weights = arcsData[:, 2]
+weights = arcsData[:, 3]
 originNode = 452
 destinationNode = 471
 
 # Setting up the model
 m = grb.Model('Subway')
 arcs = m.addVars(arcsList, obj=weights, name='arcs')
-m.addConstrs((arcs.sum('*', station) - arcs.sum(station, '*') == 0 for station in range(nbNodes) if station not in [originNode, destinationNode]), name='Constr')
+m.addConstrs((arcs.sum('*', station) - arcs.sum(station, '*') == 0 for station in range(nbNodes)
+              if station not in [originNode, destinationNode]), name='Constr')
 m.addConstr(arcs.sum('*', originNode) - arcs.sum(originNode, '*') == 1, name='Constr')
 m.addConstr(arcs.sum('*', destinationNode) - arcs.sum(destinationNode, '*') == -1, name='Constr')
 

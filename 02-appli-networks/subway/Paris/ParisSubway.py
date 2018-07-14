@@ -1,3 +1,6 @@
+## Gregory Dannay
+## https://github.com/gdannay
+
 import pandas as pd
 import gurobipy as grb
 import os
@@ -69,7 +72,7 @@ visual_style["bbox"] = (1100, 700)
 visual_style["vertex_label"] = [None for i in range(nbNodes)]
 visual_style["vertex_label"][originNode - 1] = namesNodes.iloc[originNode - 1, 0]
 visual_style["vertex_label"][destinationNode - 1] = namesNodes.iloc[destinationNode - 1, 0]
-#plot(g, **visual_style)
+plot(g, **visual_style)
 
 # Show the optimal path with iGraph
 path = originNode
@@ -78,8 +81,8 @@ if m.status == grb.GRB.Status.OPTIMAL:
         path = pathList.pop(0)
         visual_style["vertex_size"][path - 1] = 40
         visual_style["vertex_label"][path - 1] = namesNodes.iloc[path - 1, 0]
-        #plot(g, **visual_style)
+        plot(g, **visual_style)
         visual_style["vertex_size"][path - 1] = 10
         visual_style["vertex_label"][path - 1] = None
-        #time.sleep(0.5)
+        time.sleep(0.5)
 

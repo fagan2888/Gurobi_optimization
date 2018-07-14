@@ -1,3 +1,6 @@
+## Gregory Dannay
+## https://github.com/gdannay
+
 import numpy as np
 import pandas as pd
 import os
